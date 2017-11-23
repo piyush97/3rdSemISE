@@ -19,6 +19,28 @@ void InsertBeg(int item)
 		START=newnode;//pointer at start so that next time the element gets inserted here! (IMP)
 		return;
 }
+//insert and end
+void InsertEnd(int item)
+{
+	struct NODE* newnode;
+	struct NODE* TEMP=NULL;
+	newnode=(struct NODE*) malloc(sizeof(struct NODE));
+	newnode->INFO=item;
+	newnode->LINK=NULL;
+	if(START==NULL)
+	{
+		START=newnode;
+		return;
+	}
+	else
+	{
+		TEMP=START;
+		while(TEMP->LINK!=NULL)
+			TEMP=TEMP->LINK;
+			TEMP->LINK=newnode;
+			return;
+	}
+}
 //insertion at any position
 void InsertPos(int item,int pos)
 {
@@ -80,9 +102,9 @@ void display()
 void main()
 {
 	int ch,x,pos;
-	while(ch!=4)
+	while(ch!=5)
 	{
-		printf("enter choice \n 1 for insertion at begining \n 2 for insertion at any position \n 3 for display");
+		printf("enter choice \n 1 for insertion at begining \n 2 for insertion at any position \n 3 for display \n 4 for insertion at end");
 		scanf("%d",&ch);
 		switch(ch)
 		{
@@ -100,6 +122,11 @@ void main()
 				printf("THe link list is\n");
 				display();
 				break;
+			case 4:
+			printf("Enter the element\n");
+			scanf("%d",&x);
+			InsertEnd(x);
+			break;
 		}
 	}
 }
