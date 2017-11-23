@@ -79,7 +79,24 @@ void InsertPos(int item,int pos)
 	newnode->LINK=TEMP->LINK;
 	TEMP->LINK=newnode;
 }
-
+//delete from begining
+void DeleteBegining()
+{
+	struct NODE* TEMP=NULL;
+	if(START==NULL)
+	{
+		printf("SLL IS EMPTY \n");
+		break;
+	}
+	else
+	{
+		TEMP=START;
+		printf("%d",START->INFO);
+		START=START->LINK;
+		free(TEMP);
+		return;
+	}
+}
 void display()
 {
 	struct NODE* TEMP=NULL;
@@ -97,7 +114,8 @@ void display()
 			TEMP=TEMP->LINK;
 		}
 	return;	
-}	
+}
+
 }
 void main()
 {
