@@ -120,7 +120,7 @@ void display()
 void main()
 {
 	int ch,x,pos;
-	while(ch!=5)
+	while(ch!=6)
 	{
 		printf("enter choice \n 1 for insertion at begining \n 2 for insertion at any position \n 3 for display \n 4 for insertion at end");
 		scanf("%d",&ch);
@@ -141,10 +141,13 @@ void main()
 				display();
 				break;
 			case 4:
-			printf("Enter the element\n");
-			scanf("%d",&x);
-			InsertEnd(x);
-			break;
+				printf("Enter the element\n");
+				scanf("%d",&x);
+				InsertEnd(x);
+				break;
+			case 5:
+				DeleteBegining();
+				break;
 		}
 	}
 }
