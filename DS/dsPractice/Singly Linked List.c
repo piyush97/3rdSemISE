@@ -85,3 +85,21 @@ void deleteEnd()
 		return;
 	}
 }
+void display()
+{
+	struct NODE* TEMP=NULL;
+	if(START==NULL)
+	{
+		printf("SLL IS EMPTY\n");
+		return;
+	}
+	else
+	{
+		TEMP=START;
+		while(TEMP!=NULL)
+		{
+			printf("%d\n",TEMP->INFO );
+			TEMP=TEMP->LINK;
+		}
+	return;	
+}
