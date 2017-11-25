@@ -65,23 +65,4 @@ void deleteEnd()
 		printf("Linked List is Empty");
 		return;
 	}
-	else if(start->link==NULL)
-	{
-		free(start);
-		start=NULL;
-		return;
-	}
-	else
-	{
-		temp1=start;
-		while(temp1->link!=NULL)
-		{
-			temp2=temp1;
-			temp1=temp1->link;
-		}	
-		temp2->link=NULL;
-		printf("%d\n",temp1->info );
-		free(temp1);
-		return;
-	}
 }
