@@ -25,19 +25,19 @@ void InsertEnd(int item)
 	struct NODE* newnode;
 	struct NODE* TEMP=NULL;
 	newnode=(struct NODE*) malloc(sizeof(struct NODE));
-	newnode->INFO=item;
-	newnode->LINK=NULL;
-	if(START==NULL)
+	newnode->INFO=item;//inserts the item
+	newnode->LINK=NULL;//check if it points to something (CHECKS IF THE LL IS EMPTY)
+	if(START==NULL)//if it is null
 	{
-		START=newnode;
+		START=newnode;//it is definately the first element
 		return;
 	}
-	else
+	else//if it is not the first element
 	{
-		TEMP=START;
-		while(TEMP->LINK!=NULL)
-			TEMP=TEMP->LINK;
-			TEMP->LINK=newnode;
+		TEMP=START; 
+		while(TEMP->LINK!=NULL)//till the end
+			TEMP=TEMP->LINK; 
+			TEMP->LINK=newnode;//temp points to the new node which is the last element in the linked list
 			return;
 	}
 }
