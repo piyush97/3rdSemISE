@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<malloc.h>
 #include<stdlib.h>
 
 struct node
@@ -79,7 +78,7 @@ NODE delete_rear(NODE first)
 	return first;
 }
 
-void main()
+int main()
 {
 	NODE first;
 
@@ -141,7 +140,7 @@ NODE getnode()
 	if(x == NULL)
 	{
 		printf("Unable to create node\n");
-		return;
+		return 0;
 	}
 
 	return x;
