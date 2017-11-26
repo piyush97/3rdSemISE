@@ -145,11 +145,11 @@ void display()
 		}
 	return;	
 }
-void DeletePos(int pos,int item)
+/*void DeletePos(int pos,int item)
 {
 	
 }
-
+*/
 
 int main()
 {
@@ -189,8 +189,9 @@ int main()
 			case 6:
 				DeleteEnd();
 				break;
-			case 7:
+			/*case 7:
 				DeletePos();
+				*/
 
 		}
 	}
