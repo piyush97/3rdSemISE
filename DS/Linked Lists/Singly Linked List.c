@@ -127,6 +127,22 @@ void DeleteEnd()
 		return;
 	}
 }
+
+void delete_pos(int pos)
+  { struct NODE* TEMP1;
+  	struct NODE* TEMP2;
+    TEMP1=START;
+    if(START==NULL)
+		printf("SLL is Empty\n");
+	    TEMP2=NULL;
+    for(int k=1;k<pos;k++)
+    {
+      TEMP2=TEMP1;
+      TEMP1=TEMP1->LINK;
+    }
+    TEMP2->LINK=TEMP1->LINK;
+    free(TEMP1);
+  }
 void display()
 {
 	struct NODE* TEMP=NULL;
@@ -146,11 +162,7 @@ void display()
 	return;	
 }
 }
-/*void DeletePos(int pos,int item)
-{
-	
-}
-*/
+
 
 int main()
 {
@@ -190,9 +202,10 @@ int main()
 			case 6:
 				DeleteEnd();
 				break;
-			/*case 7:
-				DeletePos();
-				*/
+			case 7:
+				printf("Enter the position\n");
+				scanf("%d",&pos);
+				delete_pos(pos);
 
 		}
 	}
