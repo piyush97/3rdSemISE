@@ -66,7 +66,7 @@ void InsertPos(int item,int pos)
 		return;
 	}
 	struct NODE* TEMP=START;
-	while(TEMP!=NULL && c!=(pos-1))
+	while(TEMP!=NULL && c!=(pos-1)) //to move temp till the position we require
 	{
 		TEMP=TEMP->LINK;
 		c++;
