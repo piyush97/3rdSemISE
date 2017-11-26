@@ -102,6 +102,7 @@ void display()
 			TEMP=TEMP->LINK;
 		}
 	return;	
+	}
 }
 void insertPos(int item, int pos)
 {
@@ -150,31 +151,31 @@ int main()
 		switch(ch)
 		{
 			case 1:
-				{printf("Enter the value\n");
+				printf("Enter the value\n");
 				scanf("%d",&x);
 				InsertBeg(x);
-				break;}
+				break;
 			
 			case 2:
-				{printf("Enter position and element");
+				printf("Enter position and element");
 				scanf("%d %d",&pos,&x);
 				InsertPos(x,pos);
-				break;}
+				break;
 			
 			case 3:
-				{printf("THe link list is\n");
+				printf("THe link list is\n");
 				display();
-				break;}
+				break;
 			
 			case 4:
-				{printf("Enter the element\n");
+				printf("Enter the element\n");
 				scanf("%d",&x);
 				InsertEnd(x);
-				break;}
+				break;
 			
 			case 5:
-				{DeleteBegining();
-				break;}
+				DeleteBegining();
+				break;
 			case 6:
 				printf("Enter the position \n");
 				scanf("%d",&pos);

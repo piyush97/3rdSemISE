@@ -97,6 +97,36 @@ void DeleteBegining()
 		return;
 	}
 }
+//deleting from end
+void DeleteEnd()
+{
+	struct NODE* temp1;
+	struct NODE* temp2=NULL;
+	if (START==NULL)
+	{
+		printf("Linked List is Empty");
+		return;
+	}
+	else if(START->LINK==NULL)
+	{
+		free(START);
+		START=NULL;
+		return;
+	}
+	else
+	{
+		temp1=START;
+		while(temp1->LINK!=NULL)
+		{
+			temp2=temp1;
+			temp1=temp1->LINK;
+		}	
+		temp2->LINK=NULL;
+		printf("%d\n",temp1->INFO );
+		free(temp1);          
+		return;
+	}
+}
 void display()
 {
 	struct NODE* TEMP=NULL;
@@ -122,7 +152,7 @@ int main()
 	int ch,x,pos;
 	while(ch!=6)
 	{
-		printf("enter choice \n 1 for insertion at begining \n 2 for insertion at any position \n 3 for display \n 4 for insertion at end");
+		printf("enter choice \n 1 for insertion at begining \n 2 for insertion at any position \n 3 for display \n 4 for insertion at end \n 5 delete from begining \n6 for deleting from end");
 		scanf("%d",&ch);
 		switch(ch)
 		{
@@ -152,7 +182,9 @@ int main()
 			case 5:
 				{DeleteBegining();
 				break;}
-
+			case 6:
+			DeleteEnd();
+			break;
 
 		}
 	}
