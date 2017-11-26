@@ -145,12 +145,16 @@ void display()
 		}
 	return;	
 }
+void DeletePos(int pos,int item)
+{
+	
+}
 
 }
 int main()
 {
 	int ch,x,pos;
-	while(ch!=6)
+	while(ch!=8)
 	{
 		printf("enter choice \n 1 for insertion at begining \n 2 for insertion at any position \n 3 for display \n 4 for insertion at end \n 5 delete from begining \n6 for deleting from end");
 		scanf("%d",&ch);
@@ -183,8 +187,10 @@ int main()
 				{DeleteBegining();
 				break;}
 			case 6:
-			DeleteEnd();
-			break;
+				DeleteEnd();
+				break;
+			case 7:
+				DeletePos();
 
 		}
 	}
