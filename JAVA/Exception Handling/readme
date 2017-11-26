@@ -1,1 +1,6 @@
 ## Exception Handling in Java
+If we don't know the type of exception just do \n
+catch(Exception e)
+{
+	System.out.println(e);
+}
