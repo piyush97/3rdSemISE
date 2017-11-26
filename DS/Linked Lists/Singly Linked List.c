@@ -150,7 +150,7 @@ void DeletePos(int pos,int item)
 	
 }
 
-}
+
 int main()
 {
 	int ch,x,pos;
