@@ -145,6 +145,7 @@ void display()
 		}
 	return;	
 }
+}
 /*void DeletePos(int pos,int item)
 {
 	
