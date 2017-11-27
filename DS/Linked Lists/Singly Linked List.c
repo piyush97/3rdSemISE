@@ -133,7 +133,9 @@ void delete_pos(int pos)
   	struct NODE* TEMP2;
     TEMP1=START;
     if(START==NULL)
-		printf("SLL is Empty\n");
+		{printf("SLL is Empty\n"); 
+		return;
+	}
 	    TEMP2=NULL;
     for(int k=1;k<pos;k++)
     {
@@ -141,7 +143,7 @@ void delete_pos(int pos)
       TEMP1=TEMP1->LINK;
     }
     TEMP2->LINK=TEMP1->LINK;
-    free(TEMP1);
+    free(TEMP2);
   }
 void display()
 {
