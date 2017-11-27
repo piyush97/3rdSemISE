@@ -31,7 +31,7 @@ NODE insert( int  item, NODE root)
   temp->right = NULL;
   temp->left = NULL;
   if(root == NULL) return temp;
-  printf("Enter the direction:\n");
+  printf("Enter the direction L for left and R for right:\n");
   scanf("%s",direction);
   for(i=0;direction[i]!='\0';i++)
   direction[i] = toupper(direction[i]);
