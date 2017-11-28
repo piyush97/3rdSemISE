@@ -3,9 +3,9 @@
 
 struct node
 {
-	int info;
-	struct node *rlink;
-	struct node *llink;
+    int info;
+    struct node *rlink;
+    struct node *llink;
 };
 
 typedef struct node* NODE;
@@ -18,132 +18,132 @@ void display(NODE);
 NODE insert_rear(NODE first, int item)
 {
 
-	NODE temp;
-	NODE cur;
+    NODE temp,cur;
 
-	temp = getnode();
-	temp->info = item;
-	temp->rlink = NULL;
-	
-	if(first == NULL)
-		return temp;
+    temp = getnode();
+    temp->info = item;
+    temp->rlink = NULL;
+    temp->llink = NULL;
+    
+    if(first == NULL)
+        return temp;
 
-	cur = first;
+    cur = first;
 
-	while(cur->rlink != NULL)
-	{
-		cur = cur->rlink;
-	}
+    while(cur->rlink != NULL)
+    {
+        cur = cur->rlink;
+    }
 
-	cur->rlink = temp;
-	temp->llink = cur;
+    cur->rlink = temp;
+    temp->llink = cur;
 
-	return first;
+    return first;
 
 }
 
 NODE delete_rear(NODE first)
 {
 
-	NODE cur, prev;
+    NODE cur, prev;
 
-	if(first == NULL)
-	{
-		printf("List is empty\n");
-		return first;
-	}
+    if(first == NULL)
+    {
+        printf("List is empty\n");
+        return first;
+    }
 
-	if(first->rlink == NULL)
-	{
-		printf("Item deleted is %d\n", first->info);
-		free(first);
+    if(first->rlink == NULL)
+    {
+        printf("Item deleted is %d\n", first->info);
+        free(first);
 
-		return NULL;
-	}
+        return NULL;
+    }
 
-	cur = first;
+    cur = first;
 
-	while(cur->rlink != NULL)
-	{
-		prev = cur;
-		cur = cur->rlink;
-	}
+    while(cur->rlink != NULL)
+    {
+        prev = cur;
+        cur = cur->rlink;
+    }
 
-	prev->rlink = NULL;
+    prev->rlink = NULL;
 
-	printf("Element deleted : %d\n", cur->info);
+    printf("Element deleted : %d\n", cur->info);
 
-	free(cur);
+    free(cur);
 
-	return first;
+    return first;
 }
 
 int main()
 {
-	NODE first;
+    NODE first;
 
-	int item, choice;
+    int item, choice;
 
-	while(1)
-	{
-		printf("\n");
-		printf("1. Insert front\n2.Insert Rear\n");
-		printf("3. Delete front\n4.Delete Rear\n");
-		printf("5. Display\n");
-		printf("6. Exit\n");
-		scanf("%d",&choice);
-		
-		switch(choice)
-		{
-			case 1:
-				printf("Enter item to be inserted\t");
-				scanf("%d", &item);
-				
-				first = insert_front(first, item);
-				
-				break;
-			case 2:
-				printf("Enter item to be inserted\t");
-				scanf("%d", &item);
-				
-				first = insert_rear(first, item);
-				
-				break;
-			case 4:
-				first = delete_rear(first);
-				
-				break;	
-				
-			case 3:
-				first = delete_front(first);
-				
-				break;
-			
-			case 5:
-				display(first);
+    while(1)
+    {
+        printf("\n");
+        printf("1. Insert front\n2.Insert Rear\n");
+        printf("3. Delete front\n4.Delete Rear\n");
+        printf("5. Display\n");
+        printf("6. Exit\n");
+        scanf("%d",&choice);
+        
+        switch(choice)
+        {
+            case 1:
+                printf("Enter item to be inserted\t");
+                scanf("%d", &item);
+                
+                first = insert_front(first, item);
+                
+                break;
+            case 2:
+                printf("Enter item to be inserted\t");
+                scanf("%d", &item);
+                
+                first = insert_rear(first, item);
+                
+                break;
+            case 4:
+                first = delete_rear(first);
+                
+                break;  
+                
+            case 3:
+                first = delete_front(first);
+                
+                break;
+            
+            case 5:
+                display(first);
 
-		                break;
+                        break;
 
-			default:
-				exit(0);
-		}
-	}
+            default:
+                exit(0);
+        }
+    }
 }
 
 NODE getnode()
 {
 
-	NODE x;
+    NODE x;
 
-	x = (NODE) malloc(sizeof(struct node));
+    x = (NODE) malloc(sizeof(struct node));
 
-	if(x == NULL)
-	{
-		printf("Unable to create node\n");
-		return 0;
-	}
+    if(x == NULL)
+    {
+        printf("Unable to create node\n");
+        return 0;
+    }
 
-	return x;
+    return x;
 
 }
 
@@ -151,62 +151,65 @@ NODE getnode()
 NODE insert_front(NODE first, int item)
 {
 
-	NODE temp;
+    NODE temp;
 
-	temp = getnode();
-	temp->info = item;
-	temp->llink = NULL;
-	
-	if(first == NULL)
-		return temp;	
+    temp = getnode();
+    temp->info = item;
+    temp->llink = NULL;
+    
+    if(first == NULL)
+        return temp;    
 
-	temp->rlink = first;
-	first->llink = temp;
+    temp->rlink = first;
+    first->llink = temp;
 
-	return temp;
+    return temp;
 }
 
 NODE delete_front(NODE first)
 {
 
-	NODE next;
+    NODE next;
 
-	if(first == NULL)
-	{
-		printf("List is empty\n");
-		return first;
-	}
+    if(first == NULL)
+    {
+        printf("List is empty\n");
+        return first;
+    }
 
-	if(first->rlink == NULL && first->llink == NULL)
-	{
-		printf("Deleted item is: %d\n", first->info);
-		free(first);
-		return NULL;
-	}
+    if(first->rlink == NULL && first->llink == NULL)
+    {
+        printf("Deleted item is: %d\n", first->info);
+        free(first);
+        return NULL;
+    }
 
-	next = first->rlink;
+    next = first->rlink;
 
-	printf("Deleted item is: %d\n",first->info);
+    printf("Deleted item is: %d\n",first->info);
 
-	free(first);
-	return next;
+    free(first);
+    return next;
 
 }
 
 void display(NODE first)
 {
-	NODE temp;
-	
-	if(first == NULL)
-		printf("List is empty\n");
+    NODE temp;
+    
+    if(first == NULL)
+        {
+            printf("List is empty\n");
+            return;
+        }
 
-	printf("Contents of linked list:\n");
+    printf("Contents of linked list:\n");
 
-	temp = first;
+    temp = first;
 
-	while(temp != NULL)
-	{
-		printf("%d\n", temp->info);
-		temp = temp->rlink;
-	}
+    while(temp != NULL)
+    {
+        printf("%d\n", temp->info);
+        temp = temp->rlink;
+    }
 }
