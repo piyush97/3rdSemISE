@@ -1,5 +1,5 @@
 <h1> DataStructures </h1>
-Topics Covered
+<h2>Topics Covered</h2>
 
 <ul>Linked Lists</ul>
 <ul>Recursions  </ul>
