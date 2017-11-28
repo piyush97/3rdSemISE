@@ -14,6 +14,7 @@
 5. Practice Sessions
 
 # JAVA
+------
 1. Collections
 2. Exception Handling
 3. Packages
