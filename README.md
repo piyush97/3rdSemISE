@@ -4,7 +4,7 @@
 
 * C++
 ----
-	*Templates
-	*operator Overloading
-	*Derived Classes
-	*Misc Programs and PDFs
+*Templates
+*operator Overloading
+*Derived Classes
+*Misc Programs and PDFs
