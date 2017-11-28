@@ -13,13 +13,6 @@
 4. Misc Programs
 5. Practice Sessions
 
-# C++
------
-1. Templates
-2. operator Overloading
-3. Derived Classes
-4. Misc Programs and PDFs
-
 # JAVA
 ------
 1. Collections
