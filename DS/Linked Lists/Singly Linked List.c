@@ -142,6 +142,12 @@ void delete_pos(int pos)
       TEMP2=TEMP1;
       TEMP1=TEMP1->LINK;
     }
+    if(TEMP2==NULL)
+    {
+    	START=NULL;
+    	free(TEMP1);
+    	return;
+    }
     TEMP2->LINK=TEMP1->LINK;
     free(TEMP2);
   }
