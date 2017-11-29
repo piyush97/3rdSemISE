@@ -5,10 +5,17 @@ struct node
  {
  	int info;
  	struct node *left,*right;
- }root=NULL;
+ }*root=NULL;
 
  void CreateBST(int item)
  {
  	struct node* newnode;
- 	newnode=(struct )
+ 	newnode=(struct node*) malloc(sizeof(struct node*));
+ 	newnode->info=item;
+ 	newnode->left=newnode->right;
+ 	if(root==NULL)
+ 	{
+ 		root=newnode;
+ 		return;
+ 	}
  } 
