@@ -1,7 +1,7 @@
-#include<stdio.h>
-#include<string.h>
-#include<ctype.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
 struct node
 {
   int info;
@@ -34,7 +34,7 @@ NODE insert( int  item, NODE root)
   printf("Enter the direction L for left and R for right:\n");
   scanf("%s",direction);
   for(i=0;direction[i]!='\0';i++)
-  direction[i] = toupper(direction[i]); //converts l->L and r->R for code simplicity
+  direction[i] = toupper(direction[i]); //converts l->L and r->R for code simplicity 
   prev = NULL;
   cur = root;
   for(i=0;direction[i]!='\0' && cur!=NULL; i++)
