@@ -28,7 +28,7 @@ struct node
  		else
  			current=current->right;
  	}
- 		if (item<parent->info)
+ 		if (item<=parent->info)
  		{
  			parent->left=newnode;
  		}
@@ -37,13 +37,13 @@ struct node
  		return;
 
  } 
- void inorder(struct node *tree)
+ void inorder(struct node *root)
  {
- 	if(tree!=NULL)
+ 	if(root!=NULL)
  	{
- 		inorder(tree->left);
- 		printf("%d\n",tree->info );
- 		inorder(tree->right);
+ 		inorder(root->left);
+ 		printf("%d\n",root->info );
+ 		inorder(root->right);
  	}
  }
 int main()
