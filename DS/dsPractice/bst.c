@@ -49,7 +49,6 @@ struct node
 int main()
 {
 	int item,choice;
-	struct node* yoyo;
 	while(choice!=3)
 	{
 	printf("Enter 1 for insertion 2 for inorder\n");
@@ -59,11 +58,11 @@ int main()
 		case 1:
 		printf("Enter element you wanna enter\n");
 		scanf("%d",&item);
-		yoyo=CreateBST(item);
+		CreateBST(item);
 		break;
 		case 2:
 		printf("Inorder is\n");
-		inorder(yoyo);
+		inorder(root);
 		break;
 		}
 	}
