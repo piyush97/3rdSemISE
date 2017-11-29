@@ -37,3 +37,34 @@ struct node
  		return;
 
  } 
+ void inorder(struct node *tree)
+ {
+ 	if(tree!=NULL)
+ 	{
+ 		inorder(tree->left);
+ 		printf("%d\n",tree->info );
+ 		inorder(tree->right);
+ 	}
+ }
+int main()
+{
+	int item,choice;
+	struct node* yoyo;
+	while(choice!=3)
+	{
+	printf("Enter 1 for insertion 2 for inorder\n");
+	scanf("%d",&choice);
+		switch(choice)
+		{
+		case 1:
+		printf("Enter element you wanna enter\n");
+		scanf("%d",&item);
+		yoyo=CreateBST(item);
+		break;
+		case 2:
+		printf("Inorder is\n");
+		inorder(yoyo);
+		break;
+		}
+	}
+}
