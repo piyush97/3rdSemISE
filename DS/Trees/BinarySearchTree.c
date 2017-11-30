@@ -122,7 +122,7 @@ int main()
 				printf("The Number of nodes are %d",count(root));
 				break;
 			case 6:
-				print("The tree after swapping is\n");
+				printf("The tree after swapping is\n");
 				root=SwapTree(root);
 				inOrder(root);
 				printf("The original tree was\n");
