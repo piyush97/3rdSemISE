@@ -79,15 +79,28 @@ int count(struct NODE *root)
 		else
 			return(1+(count(root->left)+count(root->right)));
 }
+//function to swap subtrees
+struct NODE *SwapTree(struct NODE *root)
+{
+	struct NODE *temp1=NULL,*temp2=NULL;
+	if(root!=NULL)
+	{
+		temp1=SwapTree(root->left);
+		temp2=SwapTree(root->right);
+		root->right=temp1;
+		root->left=temp2;
+	}
+	return root;
+}
 int main()
 {
 	int item;
 	int flag=0;
 	int key;
 	int choice=0;
-	while(choice!=6)
+	while(choice!=7)
 	{
-		printf("\n1. Create a bst\n 2.preOrder \n3.postOrder \n4.inOrder \n5. for number of nodes");
+		printf("\n1. Create a bst\n 2.preOrder \n3.postOrder \n4.inOrder \n5. for number of nodes \n6. To Swap The Tree");
 		scanf("%d",&choice);
 		switch(choice)
 		{
@@ -107,6 +120,14 @@ int main()
 				break;
 			case 5:
 				printf("The Number of nodes are %d",count(root));
+				break;
+			case 6:
+				print("The tree after swapping is\n");
+				root=SwapTree(root);
+				inOrder(root);
+				printf("The original tree was\n");
+				root=SwapTree(root);
+				printf("This was the inOrder Representation :D\n");
 				break;
 		}
 	}
