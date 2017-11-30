@@ -67,15 +67,27 @@ void inOrder(struct NODE *root)
 		inOrder(root->right);	
 	}
 }
+
+//function to count number of nodes in binary search Tree
+int count(struct NODE *root)
+{
+	if(root==NULL)
+		return(0);
+	else
+		if(root->left==NULL && root->right==NULL)
+			return 1;
+		else
+			return(1+(count(root->left)+count(root->right)));
+}
 int main()
 {
 	int item;
 	int flag=0;
 	int key;
 	int choice=0;
-	while(choice!=5)
+	while(choice!=6)
 	{
-		printf("\n1. Create a bst\n 2.preOrder \n3.postOrder \n4.inOrder");
+		printf("\n1. Create a bst\n 2.preOrder \n3.postOrder \n4.inOrder \n5. for number of nodes");
 		scanf("%d",&choice);
 		switch(choice)
 		{
@@ -92,6 +104,9 @@ int main()
 				break;
 			case 4:
 				inOrder(root);
+				break;
+			case 5:
+				printf("The Number of nodes are %d",count(root));
 				break;
 		}
 	}
