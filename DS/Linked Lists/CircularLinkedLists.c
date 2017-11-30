@@ -49,7 +49,7 @@ return last;
 }
 if(last==NULL && pos!=1)
 {
-    printf("invalid position\n");
+    printf("\ninvalid position\n");
     return last;
 }
 if(pos==1)
@@ -72,7 +72,7 @@ if(count==pos)
    temp->link=cur;
    return last;
 }
-printf("invalid position\n");
+printf("\ninvalid position\n");
 return last;
 }
 NODE delete_beg(NODE last)
@@ -80,15 +80,15 @@ NODE delete_beg(NODE last)
 NODE temp;
 if(last==NULL)
 {
-    printf("list is empty\n");
+    printf("\nlist is empty\n");
     return last;}
 if(last->link==last){
-printf("item deleted is=%d",last->info);
+printf("\nitem deleted is=%d",last->info);
 free(last);
 return NULL;
 }
 temp=last->link;
-printf("deleted node is=%d",temp->info);
+printf("\ndeleted node is=%d",temp->info);
 last->link=temp->link;
 free(temp);
 return last;
@@ -96,11 +96,11 @@ return last;
 NODE delete_last(NODE last){
 NODE prev=NULL;
 if(last==NULL){
-    printf("empty list");
+    printf("\nempty list");
     return last;
 }
 if(last->link==last){
-printf("deleted itm is=%d",last->info);
+printf("\ndeleted itm is=%d",last->info);
 free(last);
 return NULL;
 }
@@ -111,7 +111,7 @@ while(prev->link!=last){
     }
 prev->link=last->link;
 last->link=NULL;
-    printf("deleted node is=%d",last->info);
+    printf("\ndeleted node is=%d",last->info);
 
    free(last);
 
@@ -122,11 +122,11 @@ NODE delete_pos(NODE last,int pos){
 NODE cur,prev;
 
 if(last==NULL || pos<=0){
-    printf("invalid position\n");
+    printf("\ninvalid position\n");
     return NULL;
 }
 if(last->link==last && pos==1){
-printf("deleted item is=%d",last->info);
+printf("\ndeleted item is=%d",last->info);
   free(last);
 return NULL;
 }
@@ -149,18 +149,18 @@ if(count==pos){
     return last;
 }
 else if(cur==last){
-printf("position not found\n");
+printf("\nposition not found\n");
         return last;
 }
 else{
-printf("valid position not found\n");
+printf("\nvalid position not found\n");
 return last;
 }
 }
 void display(NODE last){
     NODE temp;
 if(last==NULL){
-    printf("linked list is empty\n");
+    printf("\nlinked list is empty\n");
     return;
 }
     temp=last->link;
@@ -178,13 +178,12 @@ return;
 int main(){
 NODE last=NULL;
 int ch,item,pos;
-printf("WELCOME (circular) LINK LIST PROGRAM\n");
-printf("---------------------------------------\n");
-for(;;){
+printf("\nWELCOME (circular) LINK LIST PROGRAM\n");
+while(ch!=8){
     printf("enter the choice\n1:insert_front\n2:delete_front\n3:insert_last\n4:delete_last\n5:insert_position\n6:delete_position\n7:display\n");
     scanf("%d",&ch);
     switch(ch){
-    case 1:printf("enter the elemnt to insert\n");
+    case 1:printf("enter the element to insert\n");
     scanf("%d",&item);
     last=insert_beg(item,last);break;
     case 2:last=delete_beg(last);break;
