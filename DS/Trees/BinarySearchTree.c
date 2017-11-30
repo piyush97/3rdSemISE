@@ -127,6 +127,7 @@ int main()
 				inOrder(root);
 				printf("The original tree was\n");
 				root=SwapTree(root);
+				inOrder(root);
 				printf("This was the inOrder Representation :D\n");
 				break;
 		}
