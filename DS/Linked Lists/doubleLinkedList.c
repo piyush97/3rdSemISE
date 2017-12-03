@@ -9,16 +9,16 @@ typedef  struct node
 NODE *start=NULL;
 NODE *curptr;
 int pos1,pos2;
-NODE *newnode;
+NODE *newnode;//deckaring it in global for easy access
 
-void getnode()
+void getnode() //to enter the data in node
 {
     newnode=(NODE*)malloc(sizeof(NODE));
     printf("Enter the info\n");
     scanf("%d",&newnode->info);
 }
 
-void insert_beg()
+void insert_beg() //inserting data in the begining/start
 {
     getnode();
     if(start==NULL)
@@ -157,7 +157,7 @@ void delete_pos()
 }
 void display() 
 {
-    curptr=start;   
+    curptr=start;  
 if(start==NULL)  
  {    
   printf("\nlist is empty"); 
