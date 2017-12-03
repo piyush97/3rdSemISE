@@ -73,6 +73,37 @@ void delete_beg()
         free(curptr);
     }
 }
+void insert_pos()
+{
+    printf("enter position\n");
+    scanf("%d",&pos1);
+    if(pos1==1)
+    {
+        insert_beg();
+        return;
+    }
+    else
+    {
+        curptr=start;
+        for(int i=0;i<pos1-2;i++)
+        {
+            curptr=curptr->forw;
+        }
+        getnode();
+        newnode->back=curptr;
+        newnode->forw=curptr->forw;
+        curptr->forw->back=newnode;
+        curptr->forw=newnode;
+    }
+}
+void delete_end()
+{
+    curptr=start;
+    if(isempty())
+    {
+        return;
+    }
+}
 void display() 
 {
     curptr=start;   
