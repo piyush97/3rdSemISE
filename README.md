@@ -1,11 +1,11 @@
-# C++
+#   C++
 ----
 1. Templates
 2. operator Overloading
 3. Derived Classes
 4. Misc Programs and PDFs
 
-# DS with C
+#   DS with C
 -------
 1. Linked Lists
 2. Recursions
@@ -13,7 +13,7 @@
 4. Misc Programs
 5. Practice Sessions
 
-# JAVA
+#   JAVA
 ------
 1. Collections
 2. Exception Handling
