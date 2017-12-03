@@ -103,6 +103,57 @@ void delete_end()
     {
         return;
     }
+    else
+        if(start->forw==NULL)
+        {
+            delete_beg();
+        }
+        else
+        {
+            while(curptr->forw!=NULL)
+            {
+                curptr=curptr->forw;
+            }
+            printf("the element deleted is %d\n", curptr->info);
+            curptr->back->forw=NULL;
+            free(curptr);
+        }
+}
+void delete_pos()
+{
+    if(isempty())
+    {
+        return;
+    }
+    else
+    {
+        printf("enter position\n");
+        scanf("%d",&pos2);
+        if(pos2==1)
+        {
+            delete_beg();
+            return;
+        }
+        else
+        {
+            curptr=start;
+            for(int j=1;j<pos2;j++)
+            {
+                curptr=curptr->forw;
+            }
+            printf("The deleted element is %d\n",curptr->info );
+            if(curptr->forw==NULL)
+            {
+                curptr->back->forw=NULL;
+            }
+            else
+            {
+                curptr->back->forw=curptr->forw;
+                curptr->forw->back=curptr->back;
+            }
+            free(curptr);
+        }
+    }
 }
 void display() 
 {
@@ -133,9 +184,9 @@ int isempty()
 int main()
 {
     int choice;
-    while(choice!=5)
+    while(choice!=8)
     {
-        printf("enter 1 for insert_beg\n 2 for insert_end \n 3 for delete_beg \n 4. display");
+        printf("\n 1. insert_beg\n2.insert_end\n3.insert_pos\n4.delete_beg\n5.delete_end\n6.delete_pos\n7.display\n8.EXIT");
         scanf("%d",&choice);
         switch(choice)
         {
@@ -143,10 +194,15 @@ int main()
             break;
             case 2:insert_end();
             break;
-            case 3:delete_beg();
+            case 3:insert_pos();
             break;
-            case 4:
-            display();
+            case 4:delete_beg();
+            break;
+            case 5:delete_end();
+            break;
+            case 6:delete_pos();
+            break;
+            case 7:display();
             break;
         }
     }
