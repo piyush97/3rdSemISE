@@ -19,3 +19,17 @@ void insertBeg(int item)
 	newnode->link=last->link;
 	last->link=newnode;
 }
+void insertEnd(int item)
+{
+	newnode=(struct node*) malloc(sizeof(struct node));
+	newnode->info=item;
+	if(last==NULL)
+	{
+		newnode->link=newnode;
+		last=newnode;
+		return;
+	}
+	newnode->link=last->link;
+	last->link=newnode;
+	last=newnode;
+}
