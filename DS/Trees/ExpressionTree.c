@@ -57,7 +57,7 @@ float eval(NODE root)
     case '-':return eval(root->llink) - eval(root->rlink);
     case '*':return eval(root->llink) * eval(root->rlink);
     case '/':return eval(root->llink) / eval(root->rlink);
-    case '$':return pow(eval(root->left),eval(root->right));break;
+    case '$':return pow(eval(root->llink),eval(root->rlink));
     case '^':return pow(eval(root->llink),eval(root->rlink));
     default:
       if(isalpha(root->info))
@@ -79,7 +79,7 @@ float eval(NODE root)
 int main()
 {
   char postfix[40];
-  float res;
+  float res; 
   
   NODE root=NULL;
   printf("enter the postfix expression\n");
