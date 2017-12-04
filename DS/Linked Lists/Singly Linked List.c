@@ -48,7 +48,7 @@ void InsertPos(int item,int pos)
 	struct NODE* newnode;
 	newnode=(struct NODE*) malloc(sizeof(struct NODE));
 	newnode->INFO=item;
-	if (START==NULL && pos==1)
+	if (START==NULL && pos==1)//with no element
 	{
 		newnode->LINK=NULL;
 		START=newnode;
@@ -59,7 +59,7 @@ void InsertPos(int item,int pos)
 		printf("INVALID POSTIION\n");
 		return;
 	}
-	else if(START!=NULL &&pos==1)
+	else if(START!=NULL &&pos==1)//with element but want to add in first position
 	{
 		newnode->LINK=START;
 		START=newnode;
