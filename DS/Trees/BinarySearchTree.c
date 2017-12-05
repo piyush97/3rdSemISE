@@ -11,7 +11,7 @@ void bst(int item)
 	struct NODE* newnode;
 	newnode=(struct NODE*) malloc (sizeof(struct NODE));
 	newnode->info=item;
-	newnode->left=newnode->right;
+	newnode->left=newnode->right=NULL;
 
 	if (root==NULL)
 	{
