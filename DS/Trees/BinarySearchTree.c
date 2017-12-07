@@ -141,7 +141,7 @@ struct NODE *delete(struct NODE *root,int val)
 	}
 
 }
-//height/depth of tree
+//max height/depth of tree
 int maxDepth(struct node* node) 
 {
    if (node==NULL) 
@@ -158,7 +158,20 @@ int maxDepth(struct node* node)
        else return(rDepth+1);
    }
 } 
-
+//height of the tree
+int height(struct node* tree)
+{
+	if(tree==NULL)
+		return -1;
+	return(height(tree->left)+height(tree->right)+1);
+}
+//sum of content of all the nodes
+int sum(struct node* tree)
+{
+	if(tree==NULL)
+		return 0;
+	return(sum(tree->left)+sum(tree->right)+1);
+}
 int main()
 {
 	int item;
