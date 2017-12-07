@@ -1,4 +1,4 @@
-//implementing stacks using linked lists
+//implementing stacks using linked lists only the functions
 struct node
 {
 	int data;
@@ -19,4 +19,19 @@ struct node *push(struct node *start,int value)
 	start=newnode;
 	return start;
 
+}
+//pop
+struct node *pop(struct node *start,int value)
+{
+	struct node* newnode;
+	if(start==NULL)
+	{
+		printf("Underflow\n");
+		exit(0);
+	}
+	value=start->data;
+	newnode=start->link;
+	start=start->link;
+	free(newnode);
+	return start;
 }
