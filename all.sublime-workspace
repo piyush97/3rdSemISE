@@ -1,0 +1,412 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"del",
+				"deletedEnd"
+			],
+			[
+				"delte",
+				"deleteBeg"
+			],
+			[
+				"inser",
+				"insertEnd"
+			],
+			[
+				"de",
+				"deletedEnd"
+			],
+			[
+				"INser",
+				"insertBeg"
+			],
+			[
+				"dele",
+				"delete_beg"
+			],
+			[
+				"ins",
+				"insert_end"
+			],
+			[
+				"is",
+				"isempty"
+			],
+			[
+				"for",
+				"forw"
+			],
+			[
+				"Node",
+				"NODE"
+			],
+			[
+				"inse",
+				"insertFront"
+			],
+			[
+				"SWa",
+				"SwapTree"
+			],
+			[
+				"swap",
+				"SwapTree"
+			],
+			[
+				"Delete",
+				"DeletePos"
+			],
+			[
+				"star",
+				"START"
+			],
+			[
+				"delete",
+				"deleteEnd"
+			],
+			[
+				"Ins",
+				"InsertPos"
+			],
+			[
+				"n",
+				"NULL"
+			],
+			[
+				"in",
+				"info"
+			],
+			[
+				"t",
+				"to"
+			],
+			[
+				"c",
+				"clist"
+			],
+			[
+				"fr",
+				"free"
+			],
+			[
+				"N",
+				"NODEPTR"
+			],
+			[
+				"i",
+				"info"
+			],
+			[
+				"ne",
+				"next"
+			],
+			[
+				"Ind",
+				"InsertEnd"
+			],
+			[
+				"Link",
+				"LINK"
+			],
+			[
+				"link",
+				"LINK"
+			],
+			[
+				"n_",
+				"n_pro"
+			],
+			[
+				"n_pr",
+				"n_pro"
+			],
+			[
+				"pr",
+				"println"
+			],
+			[
+				"sear",
+				"searchBST"
+			],
+			[
+				"searc",
+				"search"
+			],
+			[
+				"el",
+				"Element"
+			],
+			[
+				"pre",
+				"PreOrder"
+			],
+			[
+				"Pre",
+				"PreOrder"
+			],
+			[
+				"S",
+				"S1"
+			],
+			[
+				"s",
+				"S1"
+			],
+			[
+				"Sta",
+				"START1"
+			],
+			[
+				"st",
+				"START2"
+			],
+			[
+				"pope",
+				"popelement"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 119.0,
+		"last_filter": "install ",
+		"selected_items":
+		[
+			[
+				"install ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 221.0,
+		"history":
+		[
+			"File practice.c",
+			"cout<<\"Hello\";",
+			"cc practice.c",
+			"gcc practice.c"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Volumes/Data/msritise/3rdSemISE"
+	],
+	"file_history":
+	[
+		"/Volumes/Data/msritise/MyCollegeForums/\\\"https:/mycollegeforums.com/about\\\"",
+		"/Volumes/Data/msritise/MyCollegeForums/stylesheets/desktop_f1a9202c8c4fbf1c9cc154b6651dff1daeb2cc26.css?__ws=mycollegeforums.com",
+		"/Volumes/Data/msritise/MyCollegeForums/categories.html",
+		"/Volumes/Data/msritise/MyCollegeForums/new",
+		"/Volumes/Data/msritise/MyCollegeForums/about",
+		"/Volumes/Data/msritise/Alogrithms/HackerRank Java /Introduction/3.java",
+		"/Volumes/Data/msritise/Alogrithms/HackerRank Java /Introduction/2.java",
+		"/Volumes/Data/msritise/Alogrithms/HackerRank Python Course Solutions/HackerRank Java /Introduction/1.java",
+		"/Volumes/Data/msritise/3rdSemISE/DS/Trees/ExpressionTree.c",
+		"/Volumes/Data/msritise/3rdSemISE/DS/Trees/BinarySearchTree.c",
+		"/Volumes/Data/msritise/3rdSemISE/DS/Trees/Binary Tree.c",
+		"/Volumes/Data/msritise/3rdSemISE/DS/Linked Lists/ordered doubly ll.c",
+		"/Volumes/Data/msritise/3rdSemISE/DS/dsPractice/dll.c",
+		"/Users/piyushmehta/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/1D718B81-D432-4C48-8E14-F697149E1BCF/cll.c",
+		"/Volumes/Data/msritise/3rdSemISE/DS/Linked Lists/Singly Linked List.c",
+		"/Volumes/Data/msritise/3rdSemISE/DS/Linked Lists/doubleLinkedList.c",
+		"/Users/piyushmehta/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/88189C7D-7080-4235-AC8E-F2894842928E/cll.c",
+		"/Users/piyushmehta/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/7A34B3C6-080C-4DAB-9FF9-4FA220363579/dll.c",
+		"/Users/piyushmehta/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/E25A1F0C-BFE8-4220-9C8E-B47A5C3F9B82/odll.c",
+		"/Volumes/Data/msritise/3rdSemISE/DS/dsPractice/oddl.c",
+		"/Users/piyushmehta/bsst.c",
+		"/Users/piyushmehta/et.c",
+		"/Users/piyushmehta/od.c",
+		"/Users/piyushmehta/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/02AD08D5-5564-4F0A-9C41-F5229962C844/dll.c",
+		"/Users/piyushmehta/clll.c",
+		"/Users/piyushmehta/sll.c",
+		"/Users/piyushmehta/bt.c",
+		"/Users/piyushmehta/display.c",
+		"/Volumes/Data/msritise/3rdSemISE/DS/Linked Lists/CircularLinkedLists.c",
+		"/Volumes/Data/msritise/3rdSemISE/DS/dsPractice/bst.c",
+		"/Users/piyushmehta/bst.c",
+		"/Volumes/Data/msritise/3rdSemISE/README.md",
+		"/Volumes/Data/msritise/3rdSemISE/C++/readme.md",
+		"/Volumes/Data/msritise/Alogrithms/Recursion/TowerOfHanoi.py",
+		"/Volumes/Data/msritise/Alogrithms/readme.md",
+		"/Users/piyushmehta/pcll.c",
+		"/Users/piyushmehta/dll.c",
+		"/Volumes/Data/msritise/3rdSemISE/C++/TEMPLATE2.cpp",
+		"/Volumes/Data/msritise/3rdSemISE/C++/Derived Class Constructor.cpp",
+		"/Users/piyushmehta/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/AF8DAABD-EB39-471C-91F5-A34F56578343/single.c",
+		"/Users/piyushmehta/Desktop/dsPractice/sll.c",
+		"/Users/piyushmehta/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/0748C396-06AF-4CE8-A23D-A81ACDFED154/doubly.c",
+		"/Users/piyushmehta/Desktop/JavaPractice/exceptionHandling/Array Out Of Bounds Exception.java",
+		"/Users/piyushmehta/Desktop/dsPractice/bst.c",
+		"/Users/piyushmehta/Desktop/Airline-Booking/src/booking.h",
+		"/Users/piyushmehta/Desktop/dsPractice/CLL.c",
+		"/Users/piyushmehta/Desktop/JavaPractice/Interface/Interface.java",
+		"/Users/piyushmehta/Downloads/Customer Billing System C Project/Customer Biling System.C",
+		"/Users/piyushmehta/Desktop/try.c",
+		"/Users/piyushmehta/Desktop/JavaPractice/DemoP2.java",
+		"/Users/piyushmehta/Desktop/JavaPractice/DemoP1.java",
+		"/Users/piyushmehta/Desktop/JavaPractice/OtherPackage.java",
+		"/Users/piyushmehta/Desktop/JavaPractice/Protection2.java",
+		"/Users/piyushmehta/Desktop/JavaPractice/SamePackage.java",
+		"/Users/piyushmehta/Desktop/JavaPractice/Derived.java",
+		"/Users/piyushmehta/Desktop/JavaPractice/Protection.java",
+		"/Users/piyushmehta/Desktop/JavaPractice/untitled.java",
+		"/Users/piyushmehta/Desktop/Circular Practice.c",
+		"/Users/piyushmehta/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/piyushmehta/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/piyushmehta/Desktop/app.java",
+		"/Users/piyushmehta/Desktop/Circular Linked List at a particular position.c",
+		"/Users/piyushmehta/Desktop/LinearLinkedList.c",
+		"/Users/piyushmehta/Desktop/StackUsingLinkedList.c",
+		"/Users/piyushmehta/Desktop/cq.c",
+		"/Users/piyushmehta/Desktop/DsPractice/gcd using recursion.c",
+		"/Users/piyushmehta/Desktop/DsPractice/infix.c",
+		"/Users/piyushmehta/Desktop/DsPractice/2nd.java"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "all.sublime-project",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"/Volumes/Data/msritise/3rdSemISE/DS/Linked Lists/ordered doubly ll.c"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
