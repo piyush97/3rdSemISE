@@ -18,6 +18,7 @@ void bst(int item)
 		root=newnode;
 		return;
 	}
+
 	struct NODE* parent=NULL;
 	struct NODE* curr=root;
 	while(curr!=NULL)
@@ -104,13 +105,43 @@ struct NODE *search(struct node *root,int key)
 		if(temp->data==key)
 			return temp;
 		else
-			if(temp->data>key)
+			if(temp->data<key)
 				temp=temp->left;
 			else
 				temp=temp->right;
 	}
 	return (NULL);
 }
+
+//function to delete the node whose data is already given
+struct NODE *delete(struct NODE *root,int val)
+{
+	struct NODE *newnode,*y,*temp;
+	newnode=(struct NODE*) malloc(sizeof(struct NODE));
+	if(newnode==NULL)
+	{
+		printf("The node doesn't exist\n");
+		return (root);
+	}
+	else
+	{
+		//for deleting root node
+		if(x==root)
+		{
+			temp=newnode->left;
+			y=newnode->right;
+			root=temp;
+			while(temp->right!=NULL)
+			{
+				temp=temp->right;
+			}
+			temp->right=y;
+			free(newnode);
+		}
+	}
+
+}
+
 int main()
 {
 	int item;
