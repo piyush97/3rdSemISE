@@ -92,6 +92,25 @@ struct NODE *SwapTree(struct NODE *root)
 	}
 	return root;
 }
+
+//searching for a target key in a binary search tree
+
+struct NODE *search(struct node *root,int key)
+{
+	struct NODE *temp;
+	temp=root;
+	while(temp!=NULL)
+	{
+		if(temp->data==key)
+			return temp;
+		else
+			if(temp->data>key)
+				temp=temp->left;
+			else
+				temp=temp->right;
+	}
+	return (NULL);
+}
 int main()
 {
 	int item;
