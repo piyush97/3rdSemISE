@@ -112,7 +112,7 @@ struct NODE *search(struct node *root,int key)
 	}
 	return (NULL);
 }
-
+/*
 //function to delete the node whose data is already given
 struct NODE *delete(struct NODE *root,int val)
 {
@@ -140,7 +140,7 @@ struct NODE *delete(struct NODE *root,int val)
 		}
 	}
 
-}
+}*/
 //max height/depth of tree
 int maxDepth(struct node* node) 
 {
