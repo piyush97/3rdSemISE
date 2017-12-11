@@ -1,8 +1,4 @@
-package Lab2017; 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class Lab12 {
 
