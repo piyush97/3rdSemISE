@@ -15,8 +15,8 @@
       <file leaf-file-name="RegisterStudent.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/StudentPackage/RegisterStudent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="57" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state relative-caret-position="264">
+              <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
               <folding>
                 <element signature="e#416#417#0" expanded="true" />
                 <element signature="e#445#446#0" expanded="true" />
@@ -262,12 +262,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512976466437</updated>
-      <workItem from="1512976471488" duration="482000" />
+      <workItem from="1512976471488" duration="494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="482000" />
+    <option name="totallyTimeSpent" value="494000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -327,8 +327,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StudentPackage/RegisterStudent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="57" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state relative-caret-position="264">
+          <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
           <folding>
             <element signature="e#416#417#0" expanded="true" />
             <element signature="e#445#446#0" expanded="true" />
