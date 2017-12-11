@@ -1,56 +1,38 @@
 import java.util.*;
-
-public class Lab12 {
-
+public class ShopCollection
+{
 	public static void main(String[] args) {
-		
-		HashMap<Integer, Integer> shopowner = new HashMap<Integer, Integer>();
-		
-		for(int i = 100, j=10; i <=200; i++, j++) { 
-			shopowner.put(i,j); 
-			
-		}
-		
-		System.out.println("Initial Values are"); 
-		Set<Map.Entry<Integer, Integer>> myset = shopowner.entrySet(); 
-		int line = 0; 
-		for(Map.Entry<Integer, Integer> me : myset) { 
-			System.out.print("Cust ID " + me.getKey() + " : "); 
-			System.out.print("Credit Points "+ me.getValue()+" ^ "); line++; 
-			if(line == 5) {System.out.print("\n"); line = 0; }
-		}
-		System.out.println("\nFor Customer ID 105 to 120 Credits to be increased to 20"); 
-		System.out.println("\nFor Customer ID 125 to 200 Credits to be increased to 30\n"); 
-		line = 0; 
-		for(Map.Entry<Integer, Integer> me : myset) { 
-			
-			int key = me.getKey();
-			int value = me.getValue(); 
-            if (key >= 100 && key <105) { 
-				
-				if(line == 3) {System.out.print("\n"); line = 0; }
-				System.out.print(" Key " + key+ " : Original Value " + value + " ^^ "); line++; 
-				System.out.print(" New Value "+me.getValue()); 
-				
-			}
-				
-				if (key >= 105 && key <=120) { 
-				//Note the use of 'shopowner' instead of 'me' to update values in HashMap 
-				shopowner.put(key, value+20); 
-				if(line == 3) {System.out.print("\n"); line = 0; }
-				System.out.print(" Key " + key+ " : Original Value " + value + " ^^^ "); line++; 
-				System.out.print(" New Value "+me.getValue()); 
-				
-			}
-			if (key >= 125 && key <=200) { 
-				shopowner.put(key, value+30); 
-				if(line == 3) {System.out.print("\n"); line = 0; }
-				System.out.print(" Key " + key+ " : Original Value " + value + " ^^^^ "); line++; 
-				System.out.print(" New Value "+me.getValue()); 
-				
-			}
-			
-		}
-	}//end main 
+		int n;
+	Scanner S=new Scanner(System.in);
+	//we'll be using hashmaps in this programs
+	System.out.println("Enter the number number of customers");
+	n=S.nextInt();
+	HashMap <Integer,Integer> hashhash=new HashMap<Integer,Integer>();
+	for (int i=0;i<n ;i++ )//to take values
+	{
+			System.out.println("Enter Customer ID please");
+			int CustomerId=S.nextInt();
+			System.out.println("Enter the credit Points please ");
+			int CreditPoint=S.nextInt();
+			hashhash.put(CustomerId,CreditPoint);
+	}
 
-}//end class Lab2
+	//for increasing points for customer
+	set<Map.Entry<Integer,Integer>> set=hashhash.entrySet();
+	for (Map.Entry<Integer,Integer> MapEntry:set ) 
+	{
+
+		if((MapEntry.getEntry()>=105)&&	(MapEntry.getEntry()>=120))
+			 {
+    		 hm.put(me.getKey(), me.getValue()+20);
+    		  	 }
+    	 if((me.getKey()>= 125) && (me.getKey()<=200))
+    	 {
+    		 hm.put(me.getKey(), me.getValue()+30);
+    		  	 }
+    	 System.out.println("for Customer id "+me.getKey()+" credit points are "+me.getValue());
+     }
+     
+	}
+
+}
