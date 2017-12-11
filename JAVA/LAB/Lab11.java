@@ -9,7 +9,7 @@ class Employee {
         name = n; qual = q;
         age = a; exp = y;
     }
-    int getAge() { return age; }
+    int getEXP() { return exp; }
     void display() {
         System.out.println(" Name is "+ name+" Age is "+ " Qualification is "+ qual+" Experience is "+exp);
     }
@@ -26,7 +26,7 @@ class Lab11 {
         emp.add(new Employee("Rajesh", "Teacher", 33, 20));
 
         for (Employee e : emp){
-            if(e.getAge()>5){
+            if(e.getEXP()>5){
                 e.display();
             }
         }
