@@ -11,7 +11,7 @@ class Employee {
     }
     int getEXP() { return exp; }
     void display() {
-        System.out.println(" Name is "+ name+" Age is "+ " Qualification is "+ qual+" Experience is "+exp);
+        System.out.println(" Name is "+ name+" Age is "+age+ " Qualification is "+ qual+" Experience is "+exp);
     }
 
 }
