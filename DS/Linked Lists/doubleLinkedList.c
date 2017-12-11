@@ -44,7 +44,7 @@ void insert_end()
     else
     {
         curptr=start;
-        while(curptr->forw!=NULL)
+        while(curptr->forw==NULL)
         {
             curptr=curptr->forw;
         }
@@ -181,6 +181,40 @@ int isempty()
     return 0;
 }
 
+
+//move
+/*
+void move()
+{
+    curptr=start;
+    int pos,element;
+    printf("Enter the element you want to move\n");
+    scanf("%d",&element);
+    if(isempty())
+       {
+        printf("Linked list is empty\n");
+        return;
+       } 
+       else{while(curptr!=NULL)
+        {
+            if(curptr->info=element)
+            {
+                printf("Enter the number of positions you want to make it forward\n");
+                scanf("%d",&pos);
+
+                for(int i=0;i==pos && curptr->link!=NULL;i++)
+                {
+                    curptr->link
+                }
+            }
+                    curptr=curptr->forw; 
+
+
+        }
+
+       }
+
+}*/
 int main()
 {
     int choice;
@@ -204,6 +238,8 @@ int main()
             break;
             case 7:display();
             break;
+           /* case 8:move();
+            break;*/
         }
     }
     return 0;
