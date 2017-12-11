@@ -18,7 +18,17 @@ public class Employee {
 	{
 		System.out.println("Name is " +name);
 		 System.out.println("Age is " +age);
-		System.out.println("Qualifia")
+		System.out.println("Qualification is" +qual);
+		System.out.println("Experience is " +exp);
 	}
-
+}
+class Main{
+	public static void main(String args[])
+	{
+		LinkedList<Employee>emp=new LinkedList<Employee>();
+		emp.add(new Employee("AMAN","Engineering",25,7));
+		emp.add(new Employee())
+		
+	}
+	
 }
