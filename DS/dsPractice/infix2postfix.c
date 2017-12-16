@@ -17,5 +17,16 @@ char pop()
 }
 int priority(char x)
 {
+	if(x=='(')
+		return 0;
+	if(x=='+'||x=='-')
+		return 1;
+	if(x=='*'||x=='/')
+		return 2;
+	if(x=='^'||x=='$')
+		return 3;
+}
+int main()
+{
 	
 }
