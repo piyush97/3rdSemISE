@@ -35,7 +35,10 @@ int main()
 	e=expression;
 	while(*e!='\0')
 	{	
-		
+		if(isalnum(e))
+			push(e);
+		else if(*e==')')
+			pop();
 
 
 
