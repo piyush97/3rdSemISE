@@ -1,24 +1,14 @@
 #include <stdio.h>
 #include <math.h>
-/**
- * Program to evaluate a postfix expression.
- * Eg. 632-5*+1^7+ = 18
- * Demonstrates application of stacks
- **/
 
 #define ST_SIZE 20
 
-/** 
- * Function Prototypes
- */
+
 void push ( double item, int *top, double * s);
 char pop ( int *top, double * s);
 
 
 
-/**
- * Function to perform an operation
- */
 double op( char symbol, double op1 , double op2 )
 {
 	switch( symbol )
@@ -35,10 +25,6 @@ double op( char symbol, double op1 , double op2 )
 
 
 
-/**
- * Stack operation - Push
- */
-
 void push ( double item, int *top, double * s)
 {
 	if( *top == ST_SIZE - 1 )
@@ -49,9 +35,6 @@ void push ( double item, int *top, double * s)
 	s[++(*top)] = item;
 }
 
-/**
- * Stack operation - Pop
- */
 
 char pop ( int *top, double * s)
 {
@@ -69,9 +52,7 @@ int isitdigit( char symbol )
 }
 
 
-/**
- * Main driver of the program;
- */
+
 
 int main ( void )
 {
