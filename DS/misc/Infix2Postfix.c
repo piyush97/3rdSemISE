@@ -8,15 +8,10 @@ void push(char x){
 }
 char pop()
 {
-    if(top==-1){
+    if(top==-1)
         return -1;
-    }
-    else{
+    else
         return stack[top--];
-
-
-    }
-
 }
 int priority(char x){
     if(x=='(')
