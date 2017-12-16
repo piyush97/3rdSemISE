@@ -1,11 +1,5 @@
 #include <stdio.h>
-
-/**
- * Demonstrates concept of recursion to solve tower of hanoi problem
- */
-
 int count = 0;
-
 void tower( int n, int source, int temp, int destination)
 {
 	if(n==1)
