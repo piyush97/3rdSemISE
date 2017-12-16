@@ -7,7 +7,6 @@ int top=-1;
 void push(char x)
 {
 	stack[++top]=x;
-	return;
 }
 char pop()
 {
@@ -35,10 +34,16 @@ int main()
 	e=expression;
 	while(*e!='\0')
 	{	
-		if(isalnum(e))
-			push(e);
-		else if(*e==')')
-			pop();
+		if(isalnum(*e))
+			printf("%c",*e);
+			else if(*e=='(')
+				push(*e);
+			else if(*e==')')
+			{
+				while(x=pop()!='(')
+					printf("%c", x);
+			}
+
 
 
 
