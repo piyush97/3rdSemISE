@@ -43,11 +43,16 @@ int main()
 				while(x=pop()!='(')
 					printf("%c", x);
 			}
-
-
-
+			else {
+				while(priority(stack[top])>=priority(*e))
+				printf("%c",pop());
+				push(*e);
+				}
 
 
 		e++;
 	}
+	while(top!=-1)
+		printf("%c",pop() );
+	return 0;
 }
