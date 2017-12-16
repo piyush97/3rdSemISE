@@ -28,5 +28,18 @@ int priority(char x)
 }
 int main()
 {
-	
+	char expression[40];
+	char *e,x;
+	printf("Enter the expression please\n");
+	scanf("%s",expression);
+	e=expression;
+	while(*e!='\0')
+	{	
+		
+
+
+
+
+		e++;
+	}
 }
