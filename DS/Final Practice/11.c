@@ -54,6 +54,8 @@ int main()
 	printf("\n Press 1 for insertion\n2. for inOrder");
 	scanf("%d",&choice);
 	while(choice!=3)
+	{printf("\n Press 1 for insertion\n2. for inOrder");
+	scanf("%d",&choice);
 	switch(choice)
 	{
 		case 1:
@@ -66,4 +68,5 @@ int main()
 		break;
 	}
 	return 0;
+}
 }
