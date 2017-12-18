@@ -51,8 +51,7 @@ void inOrder(struct node* root)
 int main()
 {
 	int choice,item;
-	printf("\n Press 1 for insertion\n2. for inOrder");
-	scanf("%d",&choice);
+	
 	while(choice!=3)
 	{printf("\n Press 1 for insertion\n2. for inOrder");
 	scanf("%d",&choice);
@@ -67,6 +66,7 @@ int main()
 		inOrder(root);
 		break;
 	}
-	return 0;
+	
 }
+return 0;
 }
