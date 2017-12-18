@@ -71,11 +71,11 @@ class Solution
         Solution ob = new Solution();
 
         Scanner scanner=new Scanner(System.in);
-        int arr[] =new int[1000000];
-        int n = arr.length;
+        long arr[] =new long[n];
+        long n = arr.length;
         for(int i=0;i<n;i++)
         {
-            arr[i]=scanner.nextInt();
+            arr[i]=scanner.nextLong();
             if(arr[i]==42)
                 break;
         }
