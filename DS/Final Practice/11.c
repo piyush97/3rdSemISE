@@ -53,6 +53,7 @@ int main()
 	int choice,item;
 	printf("\n Press 1 for insertion\n2. for inOrder");
 	scanf("%d",&choice);
+	while(choice!=3)
 	switch(choice)
 	{
 		case 1:
