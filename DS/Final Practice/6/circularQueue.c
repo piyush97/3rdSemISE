@@ -1,6 +1,6 @@
 #include<stdio.h>
 #define size 100
-int cq[size],f=-1,r=-1,pop,count=0;
+int cq[size],f=-1,r=-1,count=0;
 void insert()
 {
 	if(count==size)
