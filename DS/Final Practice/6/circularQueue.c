@@ -1,5 +1,5 @@
 #include<stdio.h>
-#define size 5
+#define size 100
 int cq[size],f=-1,r=-1,pop,count=0;
 void insert()
 {
@@ -30,7 +30,7 @@ void delete()
 			f=(f+1)%size;
 		count--;
 	}
-	return pop;
+	return ;
 }
 void display()
 {
