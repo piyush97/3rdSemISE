@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include<ctype.h>
 int top=-1,popped,i=0,k=0;
 char a[20],postfix[20],stack[20],j;
 void push(char b)
