@@ -15,7 +15,7 @@ int pop()
 }
 int prec(char op)
 {
-    if(op=='^')
+    if(op=='^'||op=='$')
         return 3;
     else if(op=='*' || op=='/')
         return 2;
