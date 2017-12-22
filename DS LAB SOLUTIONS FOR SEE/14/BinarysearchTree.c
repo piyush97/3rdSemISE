@@ -48,12 +48,25 @@ void inOrder(struct node* root)
 		inOrder(root->right);
 	}
 }
+oid display(struct node* root,int spaces)
+{
+    if(root!=NULL)
+    {
+    int i;
+    display(root->right, spaces + 3);
+    for( i = 0; i < spaces; i++ )
+    printf(" ");
+    printf("%d\n",root->info);
+    display(root->left, spaces + 3);
+    return;
+    }
+}
 int main()
 {
 	int choice,item;
 	
 	while(choice!=3)
-	{printf("\n Press 1 for insertion\n2. for inOrder");
+	{printf("\n Press 1 for insertion\n2. for display");
 	scanf("%d",&choice);
 	switch(choice)
 	{
@@ -63,7 +76,7 @@ int main()
 		insertion(item);
 		break;
 		case 2:
-		inOrder(root);
+		display(root);
 		break;
 	}
 	
