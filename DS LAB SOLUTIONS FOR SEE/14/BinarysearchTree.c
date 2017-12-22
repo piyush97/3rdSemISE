@@ -48,7 +48,7 @@ void inOrder(struct node* root)
 		inOrder(root->right);
 	}
 }
-oid display(struct node* root,int spaces)
+void display(struct node* root,int spaces)
 {
     if(root!=NULL)
     {
@@ -76,7 +76,7 @@ int main()
 		insertion(item);
 		break;
 		case 2:
-		display(root);
+		display(root,1);
 		break;
 	}
 	
