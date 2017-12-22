@@ -55,7 +55,7 @@ void display(struct node* root,int spaces)
     int i;
     display(root->right, spaces + 3);
     for( i = 0; i < spaces; i++ )
-    printf(" ");
+    printf("");
     printf("%d\n",root->info);
     display(root->left, spaces + 3);
     return;
