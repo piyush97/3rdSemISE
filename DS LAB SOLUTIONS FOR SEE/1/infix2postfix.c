@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-int top=-1,popped,i=0,k=0,j=0;
-char a[20],postfix[20],stack[20];
+int top=-1,popped,i=0,k=0;
+char a[20],postfix[20],stack[20],j;
 void push(char b)
 {
     top++;
@@ -19,8 +19,10 @@ int prec(char op)
         return 3;
     else if(op=='*' || op=='/')
         return 2;
-    else
+    else if(op=='+'|| op=='-')
         return 1;
+        else
+        return 0;
 }
 void infix_postfix(char infix[])
 {
@@ -56,6 +58,10 @@ void infix_postfix(char infix[])
     postfix[k]='\0';
     printf("\n%s",postfix);
 }
+
+
+
+
 void main()
 {
 printf("Enter the infix expression\n");
