@@ -52,6 +52,7 @@ void deleteEnd()
 	}
 	else if(start->link==NULL)
 	{
+				printf("The item deleted is %d\n",start->info );
 		free(start);
 		start=NULL;
 		return;
@@ -65,7 +66,7 @@ void deleteEnd()
 			temp1=temp1->link;
 		}
 		temp2->link=NULL;
-		printf("%d\n",temp1->info );
+		printf("the item deleted is %d\n",temp1->info );
 		free(temp1);
 		return;
 	}

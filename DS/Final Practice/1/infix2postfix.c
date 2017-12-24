@@ -1,67 +1,72 @@
-//Infix to postfix using stack
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <string.h>
 #include<ctype.h>
-#define size 40
-char stack[size];
-int top=-1;
-void push(char a)
+int top=-1,popped,i=0,k=0;
+char a[20],postfix[20],stack[20],j;
+void push(char b)
 {
-	stack[++top]=a;
+    top++;
+    stack[top]=b;
 }
-char pop()
+int pop()
 {
-	if(top!=-1)
-	return stack[top--];
-	return -1;
+    popped=stack[top];
+    top--;
+    return popped;
 }
-int priority(char x)
+int prec(char op)
 {
-	if(x=='(')
-		return 0;
-	if(x=='+'||x=='-')
-		return 1;
-	if(x=='*'||x=='/')
-		return 2;
-	if(x=='^'||x=='$')
-		return 3;
+    if(op=='^'||op=='$')
+        return 3;
+    else if(op=='*' || op=='/')
+        return 2;
+    else if(op=='+'|| op=='-')
+        return 1;
+        else
+        return 0;
 }
-int main()
+void infix_postfix(char infix[])
 {
-	char expression[40];
-	char x,*e;
-	printf("Enter the infix expression\n");
-	scanf("%s",expression);
-	e=expression;
-	while(*e!='\0')
-	{
-		if(isalnum(*e))
-		{
-			printf("%c", *e);
-		}
-		else if(*e=='(')
-		{
-			push(*e);
-		}
-		else if(*e==')')
-		{
-			while((x=pop())!='(')
-			{
-				printf("%c",x );
-			}
-		}
-		else 
-			{
-				while(priority(stack[top])>priority(*e))
-			printf("%c",pop());
-		push(*e);
-		
-	}
-		e++;
-	}
-	if(top!=-1)
-	{
-		printf("%c",pop() );
-	}
-	return 0;
-} 
+    for(i=0;infix[i]!='\0';i++)
+    {
+        if(isalnum(infix[i]))
+            postfix[k++]=infix[i];
+        else if(infix[i]=='(')
+            push(infix[i]);
+        else if(infix[i]==')')
+        {
+            while(stack[top]!='(')
+            postfix[k++]=pop();
+            j=pop();
+        }
+        else
+        {
+            if(stack[top]=='(' || top==-1)
+                 push(infix[i]);
+            else if(prec(stack[top])<prec(infix[i]))
+                 push(infix[i]);
+            else
+            {
+                while(top!=-1&&(prec(stack[top])>=prec(infix[i])))
+                postfix[k++]=pop();
+                push(infix[i]);
+            }
+        }
+    }
+    int i;
+    for(i=top;i>=0;i--)
+        postfix[k++]=pop();
+    postfix[k]='\0';
+    printf("\n%s",postfix);
+}
+
+
+
+
+void main()
+{
+printf("Enter the infix expression\n");
+char a[20];
+scanf("%s",a);
+infix_postfix(a);
+}
