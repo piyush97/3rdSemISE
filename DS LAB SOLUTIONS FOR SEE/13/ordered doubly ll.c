@@ -64,12 +64,26 @@ cur=cur->right;
 }
 }
 }
+void delete()
+{
+	struct node* temp;
+	if(start==NULL)
+	{
+		printf("LL IS EMPTY\n");
+		return;
+	}
+	temp=start;
+	printf("%d is delted\n",start->info );
+	start=start->right;
+	free(temp);
+	return;
+}
 int main()
 {
 int ch,item;
-while(ch!=3)
+while(ch!=4)
 {
-printf("enter choice\n1:Insert\n2:Display\n3:Exit\n");
+printf("enter choice\n1:Insert\n2:Display\n3:DELETE\n4:exit");
 scanf("%d",&ch);
 switch(ch)
 {
@@ -78,6 +92,9 @@ scanf("%d",&item);
 insert_order(item);
 break;
 case 2:disp();
+break;
+case 3:
+delete();
 break;
 }
 }
