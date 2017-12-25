@@ -1,19 +1,18 @@
-#include <stdio.h>
-int gcd(int n1, int n2);
+//gcd using recursion
+#include<stdio.h>
+int gcd(int m,int n)
+{
+	if(!n)
+		return m;
+	if(n>m)
+		return gcd(n,m);
+	return gcd(n,m%n);
+}
 int main()
 {
-   int n1, n2;
-   printf("Enter two positive integers: ");
-   scanf("%d %d", &n1, &n2);
-
-   printf("G.C.D of %d and %d is %d.", n1, n2, gcd(n1,n2));
-   return 0;
-}
-
- int gcd(int n1, int n2)
-{
-    if (n2 != 0)
-       return gcd(n2, n1%n2);
-    else 
-       return n1;
+	int m,n;
+	printf("enter 2 no\n");
+	scanf("%d%d",&n,&m);
+	printf("GCD is %d\n",gcd(n,m) );
+	return 0;
 }
