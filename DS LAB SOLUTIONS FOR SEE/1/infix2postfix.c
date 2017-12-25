@@ -47,7 +47,7 @@ void infix_postfix(char infix[])
                  push(infix[i]);
             else
             {
-                while(top!=-1&&(prec(stack[top])>=prec(infix[i])))
+                while(top!=-1&&(prec(stack[top])>=prec(infix[i])))//TODO
                 postfix[k++]=pop();
                 push(infix[i]);
             }
