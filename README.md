@@ -1,3 +1,15 @@
+# ALL THE PROGRAMS DONE IN 3RD SEM (ISE)
+--------
+## Cloning method
+  -------
+  Open Terminal
+  
+    $ cd Desktop
+    $ mkdir AllPrograms
+    $ cd AllPrograms
+    $ git clone https://github.com/piyush97/3rdsemise.git
+Check your Desktop there will be a folder named 'AllPrograms' 
+
 #   C++
 ----
 1. Templates
@@ -21,3 +33,9 @@
 4. Lab Sessions
 5. Interfaces
 6. Basic Programs
+
+#   Programs for final Practical Examination JAVA and DS
+-------
+* All Question Solutions provided
+
+# Marked Archived on 26-12-2017
