@@ -1,38 +1,30 @@
+//1.Write a java program to help the shop owner to create a Map of his customer’s id with the credit points. The customer id’s are in the range 100 to 200. For customer’s id from 105 to 120 update the credit points by 20. For customer’s id from 125 to 200 update the credit points by 30.  Display the customer map.
 import java.util.*;
-public class ShopCollection
-{
-	public static void main(String[] args) {
-		int n;
-	Scanner S=new Scanner(System.in);
-	//we'll be using hashmaps in this programs
-	System.out.println("Enter the number number of customers");
-	n=S.nextInt();
-	HashMap <Integer,Integer> hashhash=new HashMap<Integer,Integer>();
-	for (int i=0;i<n ;i++ )//to take values
-	{
-			System.out.println("Enter Customer ID please");
-			int CustomerId=S.nextInt();
-			System.out.println("Enter the credit Points please ");
-			int CreditPoint=S.nextInt();
-			hashhash.put(CustomerId,CreditPoint);
-	}
-
-	//for increasing points for customer
-	set<Map.Entry<Integer,Integer>> set=hashhash.entrySet();
-	for (Map.Entry<Integer,Integer> MapEntry:set ) 
-	{
-
-		if((MapEntry.getEntry()>=105)&&	(MapEntry.getEntry()>=120))
-			 {
-    		 hm.put(me.getKey(), me.getValue()+20);
-    		  	 }
-    	 if((me.getKey()>= 125) && (me.getKey()<=200))
-    	 {
-    		 hm.put(me.getKey(), me.getValue()+30);
-    		  	 }
-    	 System.out.println("for Customer id "+me.getKey()+" credit points are "+me.getValue());
-     }
-     
-	}
-
+public class Shop {
+    static Scanner s=new Scanner(System.in);
+    public static void main(String args[])
+    {
+        HashMap<Integer,Integer> hashmap=new HashMap<Integer,Integer>();
+        System.out.println("Enter the number of customers");
+        int n=s.nextInt();
+        for(int i=0;i<n;i++)
+        {
+            System.out.println("Enter the customer id ");
+            int custId=s.nextInt();
+            System.out.println("Enter the credit Points");
+            int credit=s.nextInt();
+            hashmap.put(custId,credit);
+        }
+        Set<Map.Entry<Integer,Integer>>set=hashmap.entrySet();
+        for(Map.Entry<Integer,Integer> me:set)
+        {
+            if(me.getKey()>=105 && me.getKey()<=120)
+                me.setValue(me.getValue()+20);
+            if(me.getKey()>=125 && me.getKey()<200)
+                me.setValue(me.getValue()+30);
+            System.out.println("Cust id:"+me.getKey()+"Credit"+me.getValue());
+        }
+    }
 }
+
+//Easier Way

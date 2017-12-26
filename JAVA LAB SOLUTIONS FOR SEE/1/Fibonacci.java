@@ -18,8 +18,24 @@ public class Fibonacci {
           first = second;
           second = next;
           }
-  
+        System.out.println("Enter the number of terms for recursion program");
+        int n=s.nextInt();
+        int res=fibno(n);
+        System.out.println(res);
+
        
+    }
+    //using recursion
+    int fibno(int num)
+    {
+      if(num==1||num==2)
+      {
+        return 1;
+      }
+      else
+      {
+        return fibno(num)+fibno(num-1);
+      }
     }
 
 }
