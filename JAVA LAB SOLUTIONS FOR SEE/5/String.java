@@ -1,70 +1,88 @@
-import java.util.Scanner;
-
-public class StringClass {
-
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		String st;
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the String");
-		st=sc.nextLine();
-		//sc.nextLine();
-		System.out.println("Enter the number n");
-		int n = sc.nextInt();
-		System.out.println("Enter the number m");
-		int m = sc.nextInt();
-		
-		String st1 = st.substring(n, n+m);
-		System.out.println("The extracted string is "+st1);
-		System.out.println("enter the string to be searched");
-		st1 = sc.next();
-		int count = 0;
-	     int idx = 0;
-
-	     while ((idx = st.indexOf(st1, idx)) != -1)
-	     {
-	        idx++;
-	        count++;
-	     }
-
-	   //	int n1 = st.indexOf(st1,0);
-		System.out.println("Count of "+ st1 +"is "+count);
-		System.out.println("enter the string to be replaced");
-		st1 = sc.next();
-		String stt = st.replaceAll(st1, "hello");
-		System.out.println(stt +" is the string after replacement");
-		char[] charArray = st.toCharArray();
-		int length = charArray.length;
-
-		for(int i=0;i<length;i++){
-		   for(int j=i+1;j<length-1;j++){
-		      if (charArray[j] < charArray[i]) {
-		          char temp = charArray[i];
-		          charArray[i]=charArray[j];
-		          charArray[j]=temp;
-		      }
-		   }
-		}
-		
-		st1 = String.valueOf(charArray);
-		String st3 = new String("Hello");
-		System.out.println("The sorted string is "+st1);
-		// Compare two strings
-		System.out.println("Enter the string to be compared");
-		sc.nextLine();
-		String st2 = sc.nextLine();
-		int p = st3.compareToIgnoreCase(st2);
-		if(st1==st2)
-		{
-			System.out.println("Both strings are equal");
-		}
-		System.out.println("The result of comparison "+p);
-		st1.concat(st2);
-		sc.close();
-		
-	}
-	
+import java.util.*;
+public class KaamStringsKa {
+    Scanner S=new Scanner(System.in);
+    String ek;
+    void getData()
+    {
+        System.out.println("Abbey ek string daal na");
+        ek=S.nextLine();
+        
+    }
+    void Sub()
+    {
+        System.out.println("Enter the starting and ending point for the substring you want");
+        int start=S.nextInt();
+        int end=S.nextInt();
+        String SS=(ek.substring(start, end));
+        System.out.println("New String  is: "+SS);
+    }
+    void Occur()
+    {
+        int count=0;
+        System.out.println("Enter the text who's occurance u want to know");
+        char text=S.next().charAt(0);
+        
+        char checkString[]=ek.toCharArray();
+        for(int i=0;i<ek.length();i++)
+        {
+            if(checkString[i]==text)
+            {
+                count++;
+            }
+            
+        }
+        System.out.println("The occurence is "+count);
+    }
+    void replace()
+    {
+        System.out.println("enter the string to be replaced");
+        String st1 = S.next();
+        System.out.println("Enter the replacemnet");
+        String rep=S.next();
+        String newS=st1.replaceAll(st1, rep);
+        System.out.println("New string is"+newS);
+        
+    }
+    void alphaOrder()
+    {
+        System.out.println("enter the string to be sorted");
+        String sortwali=S.nextLine();
+        char Sort[]=sortwali.toCharArray();
+        Arrays.sort(Sort);
+        System.out.println("Sorted String is"+new String(Sort));
+        
+        
+    }
+    void compare()
+    {
+        System.out.println("enter the 2 string to be compared");
+        String s1=S.next();
+        String s2=S.next();
+        int s3=s1.compareToIgnoreCase(s2);
+        System.out.println("Comparision by"+s3);
+        
+        
+        
+    }
+    void concat()
+    {
+        System.out.println("enter the 2 string to be concated");
+        String s1=S.next();
+        String s2=S.next();
+        String s3=s1.concat(s2);
+        System.out.println("Concatinated string is ye dekho!!! "+s3);
+        
+    }
+    public static void main(String args[])
+    {
+        KaamStringsKa k=new KaamStringsKa();
+        k.getData();
+        k.Sub();
+        k.Occur();
+        k.alphaOrder();
+        k.replace();
+        k.compare();
+        k.concat();
+    }
 }
+
